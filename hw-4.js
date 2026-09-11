@@ -3,25 +3,34 @@ const button1 = document.getElementById('exercise-1');
 
 // Добавляем обработчик события
 button1.addEventListener('click', function() {
-    let i = 0;
-    let hi = 'Привет'
-    do {
-        i ++;
-        console.log(hi);
+    // let i = 0;
+    // let hi = 'Привет'
+    // do {
+    //     i ++;
+    //     console.log(hi);
         
-    }while (i < 2)
+    // }while (i < 2)
+
+    // console.log('Привет!');
+    
+    for (let i = 0; i < 2; i++) {
+    console.log('Привет!');
+}
 });
 
 const button2 = document.getElementById('exercise-2');
 
 button2.addEventListener('click', function() {
-    let num1 = 0;
-    do {
-        num1 ++;
-        console.log(num1);
+    // let num1 = 0;
+    // do {
+    //     num1 ++;
+    //     console.log(num1);
         
-    } while (num1 < 5);
+    // } while (num1 < 5);
     
+    for (let i = 1; i <= 5; i++) {
+        console.log(i);       
+    }
     
 });
 
@@ -55,12 +64,20 @@ const button5 = document.getElementById('exercise-5');
 button5.addEventListener('click', function() {
     let num4 = 1000;
     let count = 0;
-do {
+// do {
+//     num4 = num4 / 2;
+//     count++
+// } while (num4 >= 50);
+//   console.log('Количество операций: ',count);
+//   console.log('Остаток: ',num4);  
+
+while (num4 > 50) {
+    
     num4 = num4 / 2;
     count++
-} while (num4 >= 50);
-  console.log('Количество операций: ',count);
-  console.log('Остаток: ',num4);  
+    console.log('Остаток: ',num4);
+}
+    console.log('Количество операций: ',count);
 });
 
 
